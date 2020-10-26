@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/center"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="230dp"
+        android:layout_height="213dp"
+        android:layout_above="@+id/center"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/splash1_logo" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="150dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_des1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="附近的人，附近的苗"
+            android:textColor="#6c7b8a"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_des2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="它就在那里"
+            android:textColor="#c0ccdc"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_des3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="有时候远有时候近"
+            android:textColor="#c0ccdc"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

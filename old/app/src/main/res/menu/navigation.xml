@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_item"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_miaopu"
+        android:icon="@drawable/ic_miaopu_item"
+        android:title="@string/title_miaopu" />
+
+    <item
+        android:id="@+id/navigation_firends"
+        android:icon="@drawable/ic_pengyou_item"
+        android:title="@string/title_firends" />
+    <item
+        android:id="@+id/navigation_mine"
+        android:icon="@drawable/ic_mine_item"
+        android:title="@string/title_mine" />
+</menu>

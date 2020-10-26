@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="5dp">
+
+    <RelativeLayout
+
+        android:layout_width="100dp"
+        android:layout_height="match_parent">
+
+        <com.widget.miaotu.common.utils.rclayout.RCImageView
+            android:id="@+id/iv_home_zxmm"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerInParent="true"
+           android:scaleType="centerCrop"
+            app:round_corner="5dp"
+            android:src="@drawable/zhanweitu_150_150" />
+
+        <ImageView
+            android:id="@+id/iv_home_zxmm_jp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+             ></ImageView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_home_zxmm1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:textColor="@color/home_lf_title"
+
+                android:textSize="17sp" />
+
+            <com.widget.miaotu.common.utils.ShapeTextView
+                android:id="@+id/stv_home_zxmm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="2dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/textSize_8"
+                app:radiusT="3dp"
+                app:strokeColorT="@color/colorAccent"
+                app:strokeWidthT="1dp"></com.widget.miaotu.common.utils.ShapeTextView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_home_zxmm2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/home_text_gray1"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_home_zxmm3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+
+            android:maxEms="12"
+            android:singleLine="true"
+            android:textColor="@color/home_text_gray1"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_home_zxmm4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+
+            android:maxEms="12"
+            android:singleLine="true"
+            android:textColor="@color/home_gray2"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="15dp"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_home_zxmm5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxEms="8"
+            android:singleLine="true"
+            android:textColor="@color/home_gray2"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_home_zxmm6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxEms="12"
+            android:singleLine="true"
+            android:textColor="@color/home_yellow1"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

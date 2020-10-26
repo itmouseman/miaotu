@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".master.home.activity.ReMenHuoDongActivity">
+
+    <include layout="@layout/include_titlebar"
+
+        ></include>
+
+<!--    <com.flyco.tablayout.SlidingTabLayout-->
+<!--        android:id="@+id/tab_re_men_huo_dong"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="44dp"-->
+<!--        android:layout_marginTop="1dp"-->
+<!--        android:background="@color/white_color"-->
+<!--        app:tl_indicator_color="@color/colorAccent"-->
+<!--        app:tl_indicator_height="2dp"-->
+<!--        app:tl_indicator_margin_bottom="8dp"-->
+<!--        app:tl_indicator_width="10dp"-->
+<!--        app:tl_tab_space_equal="true"-->
+<!--        app:tl_divider_width="30dp"-->
+<!--        app:tl_textSelectColor="@color/colorAccent"-->
+<!--        app:tl_textUnselectColor="#333333" />-->
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_re_men_huo_dong"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

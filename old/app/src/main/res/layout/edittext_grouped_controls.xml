@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edit_input"
+            style="@style/EditTextStyle"
+            android:hint="请输入手机号码/用户名"
+            android:gravity="left"
+            android:singleLine="true"
+            />
+
+        <ImageView
+            android:id="@+id/image_clean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/login_clean"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/image_eye_see"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/eyes_closed"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/image_eye_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/eyes_open"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/text_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="获取验证码"
+            android:textColor="@color/text_color_EC"
+            android:visibility="gone"
+            />
+</merge>

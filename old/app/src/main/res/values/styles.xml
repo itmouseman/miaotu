@@ -1,0 +1,252 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="QMUI.Compat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TitleTextSize" >
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TabLayoutStyle" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/TabTextAppearance</item>
+    </style>
+
+    <style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="AppTheme.Toolbar" parent="Widget.AppCompat.ActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+    </style>
+
+
+    <declare-styleable name="LetterBar">
+        <attr name="android:textColor" />
+        <attr name="android:textSize" />
+        <attr name="letterSpace" format="dimension" />
+        <attr name="highlightColor" format="color" />
+        <attr name="highlightBackground" format="color" />
+    </declare-styleable>
+
+    <!-- 应用启动页(StartingWindow)的theme -->
+    <style name="AppTheme.StartingWindowTheme" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        <!-- 可以设置成纯颜色（设置一个和Activity UI相似的背景） -->
+        <!--<item name="android:windowBackground">@mipmap/aaa</item>-->
+        <!--也可以设置成一张图片 -->
+        <item name="android:windowBackground">@mipmap/bg_wel_come</item>
+        <!--全屏设置-->
+        <item name="android:windowFullscreen">true</item>
+        <!--<item name="android:windowFullscreen">true</item>-->
+    </style>
+
+    <!-- *公共属性* -->
+
+
+    <!--圆形-->
+
+
+    <attr name="round_as_circle" format="boolean" />
+
+    <!--全部圆角半径-->
+
+
+    <attr name="round_corner" format="integer|dimension" />
+
+    <!--针对各个角的半径-->
+
+
+    <attr name="round_corner_top_left" format="integer|dimension" />
+
+    <attr name="round_corner_top_right" format="integer|dimension" />
+
+    <attr name="round_corner_bottom_left" format="integer|dimension" />
+
+    <attr name="round_corner_bottom_right" format="integer|dimension" />
+
+    <!--描边颜色／半径-->
+
+
+    <attr name="stroke_color" format="color|reference" />
+
+    <attr name="stroke_width" format="integer|dimension" />
+
+    <!-- 是否剪裁 RCLayout 的背景 -->
+
+
+    <attr name="clip_background" format="boolean" />
+
+    <!--真正用于解析的属性-->
+
+
+    <declare-styleable name="RCAttrs">
+
+        <attr name="round_as_circle" />
+
+        <attr name="round_corner" />
+
+        <attr name="round_corner_top_left" />
+
+        <attr name="round_corner_top_right" />
+
+        <attr name="round_corner_bottom_left" />
+
+        <attr name="round_corner_bottom_right" />
+
+        <attr name="stroke_color" />
+
+        <attr name="stroke_width" />
+
+        <attr name="clip_background" />
+
+    </declare-styleable>
+
+    <!--假体：用于提示-->
+    <declare-styleable name="RCRelativeLayout">
+
+        <attr name="round_as_circle" />
+
+        <attr name="round_corner" />
+
+        <attr name="round_corner_top_left" />
+
+        <attr name="round_corner_top_right" />
+
+        <attr name="round_corner_bottom_left" />
+
+        <attr name="round_corner_bottom_right" />
+
+        <attr name="stroke_color" />
+
+        <attr name="stroke_width" />
+
+        <attr name="clip_background" />
+
+    </declare-styleable>
+
+    <!--假体：用于提示-->
+    <declare-styleable name="RCImageView">
+        <attr name="round_as_circle" />
+        <attr name="round_corner" />
+        <attr name="round_corner_top_left" />
+        <attr name="round_corner_top_right" />
+        <attr name="round_corner_bottom_left" />
+        <attr name="round_corner_bottom_right" />
+        <attr name="stroke_color" />
+        <attr name="stroke_width" />
+        <attr name="clip_background" />
+    </declare-styleable>
+
+
+    <declare-styleable name="BGASortableNinePhotoLayout">
+        <!-- 是否显示加号，默认值为 true -->
+        <attr name="bga_snpl_plusEnable" format="boolean"/>
+        <!-- 是否可拖拽排序，默认值为 true -->
+        <attr name="bga_snpl_sortable" format="boolean"/>
+        <!-- 删除按钮图片，默认值为 R.mipmap.bga_pp_ic_delete -->
+        <attr name="bga_snpl_deleteDrawable" format="reference"/>
+        <!-- 可选择图片的总张数,默认值为 9 -->
+        <attr name="bga_snpl_maxItemCount" format="integer"/>
+        <!-- 列数,默认值为 3 -->
+        <attr name="bga_snpl_itemSpanCount" format="integer"/>
+        <!-- 删除按钮是否重叠四分之一，默认值为 false -->
+        <attr name="bga_snpl_deleteDrawableOverlapQuarter" format="boolean"/>
+        <!-- 添加按钮图片，默认值为 R.mipmap.bga_pp_ic_plus -->
+        <attr name="bga_snpl_plusDrawable" format="reference"/>
+        <!-- Item 条目圆角尺寸，默认值为 0dp -->
+        <attr name="bga_snpl_itemCornerRadius" format="dimension|reference"/>
+        <!-- Item 间的水平和垂直间距，默认值为 4dp -->
+        <attr name="bga_snpl_itemWhiteSpacing" format="dimension|reference"/>
+        <!-- 出去九宫格部分的空白区域的尺寸，默认值为 100dp -->
+        <attr name="bga_snpl_otherWhiteSpacing" format="dimension|reference"/>
+        <!-- 占位图资源，默认值为 R.mipmap.bga_pp_ic_holder_light -->
+        <attr name="bga_snpl_placeholderDrawable" format="reference"/>
+        <!-- 是否可编辑，默认值为 true -->
+        <attr name="bga_snpl_editable" format="boolean"/>
+        <!-- item 的尺寸，大于 0dp 时优先级高于 bga_snpl_otherWhiteSpacing，默认值为 0dp -->
+        <attr name="bga_snpl_itemWidth" format="dimension|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="BGANinePhotoLayout">
+        <!-- Item 条目圆角尺寸，默认值为 0dp -->
+        <attr name="bga_npl_itemCornerRadius" format="dimension|reference"/>
+        <!-- 当只有一张图片时，是否显示成大图，默认值为 true -->
+        <attr name="bga_npl_showAsLargeWhenOnlyOne" format="boolean"/>
+        <!-- Item 间的水平和垂直间距，默认值为 4dp -->
+        <attr name="bga_npl_itemWhiteSpacing" format="dimension|reference"/>
+        <!-- 出去九宫格部分的空白区域的尺寸，默认值为 100dp -->
+        <attr name="bga_npl_otherWhiteSpacing" format="dimension|reference"/>
+        <!-- 占位图资源，默认值为 R.mipmap.bga_pp_ic_holder_light -->
+        <attr name="bga_npl_placeholderDrawable" format="reference"/>
+        <!-- item 的尺寸，优先级高于 bga_npl_otherWhiteSpacing，默认值为 0dp -->
+        <attr name="bga_npl_itemWidth" format="dimension|reference"/>
+        <!-- 列数,默认值为 3，当该值大于 3 并且数据源里只有四张图片时不会显示成 2 列 -->
+        <attr name="bga_npl_itemSpanCount" format="integer"/>
+    </declare-styleable>
+
+    <!--<declare-styleable name="BGAImageView">-->
+    <!--&lt;!&ndash; 默认图片资源，默认值为 null &ndash;&gt;-->
+    <!--<attr name="android:src"/>-->
+    <!--&lt;!&ndash; 是否是圆形，默认值为 false &ndash;&gt;-->
+    <!--<attr name="bga_iv_circle" format="boolean"/>-->
+    <!--&lt;!&ndash; 圆角矩形的半径，默认值为 0dp &ndash;&gt;-->
+    <!--<attr name="bga_iv_cornerRadius" format="reference|dimension"/>-->
+    <!--&lt;!&ndash; 是否是矩形，默认值为 false &ndash;&gt;-->
+    <!--<attr name="bga_iv_square" format="boolean"/>-->
+    <!--&lt;!&ndash; 描边的宽度，默认值为 0dp &ndash;&gt;-->
+    <!--<attr name="bga_iv_borderWidth" format="reference|dimension"/>-->
+    <!--&lt;!&ndash; 描边的颜色，默认值为 Color.WHITE &ndash;&gt;-->
+    <!--<attr name="bga_iv_borderColor" format="reference|color"/>-->
+    <!--</declare-styleable>-->
+
+
+    <!-- 中间弹出框 -->
+    <style name="dialog_center" parent="Theme.AppCompat.Dialog.Alert">
+        <!-- 去黑边 -->
+        <item name="android:windowFrame">@null</item>
+        <item name="android:screenOrientation">portrait</item>
+        <!-- 设置是否可滑动 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 背景 -->
+        <!-- 窗口背景 -->
+        <!--<item name="android:windowBackground">#00000000</item>-->
+        <!-- 是否变暗 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 点击空白部分activity不消失 -->
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+    <!--输入框样式-->
+    <style name="EditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@null</item>
+        <item name="android:drawablePadding">10dp</item>
+        <!--item name="android:drawableBottom">@drawable/edittext_line</item-->
+        <item name="android:textColorHint">@color/text_color_99</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+
+    <declare-styleable name="CustomEditTextStyle">
+        <attr name="text_hint" format="string" />
+        <attr name="edit_style" format="reference|integer" />
+        <attr name="edit_input_length" format="reference|integer" />
+        <attr name="edit_input_type" format="string" />
+    </declare-styleable>
+
+    <!--界面分割线的样式-->
+    <style name="cut_off_rule_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/colorGrayF2F6F9</item>
+    </style>
+</resources>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_titlebar" />
+
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smart.refresh.header.FalsifyHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="42dp"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginRight="42dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.widget.miaotu.common.utils.rclayout.RCImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="#00CAB8"
+                        app:round_corner="16dp"
+                        app:stroke_color="@color/rz_conor_bian"
+                        app:stroke_width="4dp" />
+
+                    <View
+                        android:id="@+id/view_renzhegn_setp2_show"
+                        android:layout_width="50dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        android:background="#999999" />
+
+                    <com.widget.miaotu.common.utils.rclayout.RCImageView
+                        android:id="@+id/rci_renzhegn_setp2_show"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="#CCCCCC"
+                        app:round_corner="16dp"
+                        app:stroke_color="#F0F0F0"
+                        app:stroke_width="4dp" />
+
+                    <View
+                        android:id="@+id/view_renzhegn_setp2_hide"
+                        android:layout_width="50dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        android:background="#00CAB8"
+                        android:visibility="gone" />
+
+                    <com.widget.miaotu.common.utils.rclayout.RCImageView
+                        android:id="@+id/rci_renzhegn_setp2_hide"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="#00CAB8"
+                        android:visibility="gone"
+                        app:round_corner="16dp"
+                        app:stroke_color="@color/rz_conor_bian"
+                        app:stroke_width="4dp" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        android:background="#999999" />
+
+                    <com.widget.miaotu.common.utils.rclayout.RCImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="#CCCCCC"
+                        app:round_corner="16dp"
+                        app:stroke_color="#F0F0F0"
+                        app:stroke_width="4dp" />
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="33dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="25dp"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+
+                        android:text="发起认证"
+                        android:textColor="#333333"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+
+                        android:text="认证完成"
+                        android:textColor="#333333"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+
+                        android:text="审核中"
+                        android:textColor="#333333"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginRight="35dp"
+                    android:lineSpacingExtra="5dp"
+                    android:text=" 企业认证是保障企业存在的真实性，并有助于提升企业信誉。 "
+                    android:textColor="#999999"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginBottom="17.5dp"
+                    android:lineSpacingExtra="5dp"
+                    android:text="拍摄时请确保证件边框完整、字迹清晰、亮度均衡。"
+                    android:textColor="#999999"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_color"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_qiye_yingyezhizhao"
+                        android:layout_width="147dp"
+                        android:layout_height="102dp"
+                        android:layout_marginTop="22dp"
+                        android:src="@mipmap/iv_yingyezhizhao" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11dp"
+                        android:text="点击开始拍摄营业执照" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="22dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#F0F0F0" />
+
+                    <ImageView
+                        android:id="@+id/iv_qiye_shengfenzheng"
+                        android:layout_width="147dp"
+                        android:layout_height="102dp"
+                        android:layout_marginTop="22dp"
+                        android:src="@mipmap/iv_shenfengzheng" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginBottom="22dp"
+                        android:text="点击开始拍摄法人身份证" />
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/bt_qiye_renzheng"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="18dp"
+                    android:background="@drawable/btn_green_press_bg"
+                    android:gravity="center"
+                    android:text="提交审核"
+                    android:textColor="@color/white_color"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <com.scwang.smart.refresh.header.FalsifyFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+</LinearLayout>

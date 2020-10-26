@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+>
+
+
+    <com.qmuiteam.qmui.widget.QMUITopBarLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+ <com.scwang.smart.refresh.layout.SmartRefreshLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+     <com.scwang.smart.refresh.header.FalsifyHeader
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"/>
+     <androidx.core.widget.NestedScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_marginBottom="60dp"
+         >
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+             <View
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"
+                 android:background="#FFf7f7f7" />
+
+             <View
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"
+                 android:layout_marginTop="10dp"
+                 android:background="#FFf7f7f7" />
+
+             <LinearLayout
+                 android:id="@+id/ll_comment"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:visibility="gone">
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="50dp"
+                     android:background="@color/white">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="match_parent"
+                         android:gravity="center_vertical"
+                         android:paddingLeft="13dp"
+                         android:text="企业名称："
+                         android:textColor="@color/black"
+                         android:textSize="14sp" />
+
+                     <EditText
+                         android:id="@+id/et_demand_comment_name"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:layout_marginRight="20dp"
+                         android:background="@null"
+                         android:gravity="right|center"
+                         android:hint="请输入企业名称"
+                         android:textSize="14sp" />
+                 </LinearLayout>
+
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="0.5dp"
+                     android:layout_marginLeft="12dp"
+                     android:layout_marginRight="12dp"
+                     android:background="#FFE2E2E2" />
+
+                 <LinearLayout
+                     android:id="@+id/ll_base_info_demand_tech_address2"
+                     android:layout_width="match_parent"
+                     android:layout_height="50dp"
+                     android:background="@color/white">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="match_parent"
+                         android:gravity="center_vertical"
+                         android:paddingLeft="13dp"
+                         android:text="企业所在地："
+                         android:textColor="@color/black"
+                         android:textSize="14sp" />
+
+                     <TextView
+                         android:id="@+id/tv_demand_comment_address"
+                         android:layout_width="wrap_content"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1"
+                         android:gravity="center|right"
+                         android:hint="请选择企业所在地"
+                         android:textColor="@color/black"
+                         android:textSize="14sp" />
+
+                     <ImageView
+                         android:layout_width="13dp"
+                         android:layout_height="match_parent"
+                         android:layout_marginLeft="10dp"
+                         android:layout_marginRight="20dp"
+                         android:src="@mipmap/ic_base_next" />
+                 </LinearLayout>
+
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="10dp"
+                     android:background="#FFf7f7f7" />
+
+             </LinearLayout>
+
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="50dp"
+                 android:background="@color/white">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:gravity="center_vertical"
+                     android:paddingLeft="13dp"
+                     android:text="苗圃名称："
+                     android:textColor="@color/black"
+                     android:textSize="14sp" />
+
+                 <EditText
+                     android:id="@+id/et_demand_tech_add_name"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_marginRight="20dp"
+                     android:background="@null"
+                     android:gravity="right|center"
+                     android:hint="请输入苗圃名称"
+                     android:textSize="14sp" />
+             </LinearLayout>
+
+             <View
+                 android:layout_width="match_parent"
+                 android:layout_height="0.5dp"
+                 android:layout_marginLeft="12dp"
+                 android:layout_marginRight="12dp"
+                 android:background="#FFE2E2E2" />
+
+             <LinearLayout
+                 android:id="@+id/ll_base_info_demand_tech_address"
+                 android:layout_width="match_parent"
+                 android:layout_height="50dp"
+                 android:background="@color/white">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:gravity="center_vertical"
+                     android:paddingLeft="13dp"
+                     android:text="苗圃所在地："
+                     android:textColor="@color/black"
+                     android:textSize="14sp" />
+
+                 <TextView
+                     android:id="@+id/tv_demand_tech_add_address"
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:layout_weight="1"
+                     android:gravity="center|right"
+                     android:hint="请选择苗圃地址"
+                     android:textColor="@color/black"
+                     android:textSize="14sp" />
+
+                 <ImageView
+                     android:layout_width="13dp"
+                     android:layout_height="match_parent"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginRight="20dp"
+                     android:src="@mipmap/ic_base_next" />
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="50dp"
+                 android:background="@color/white">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:gravity="center_vertical"
+                     android:paddingLeft="13dp"
+                     android:text="详细地址："
+                     android:textColor="@color/black"
+                     android:textSize="14sp" />
+
+                 <EditText
+                     android:id="@+id/et_demand_tech_add_address_details"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_marginRight="20dp"
+                     android:background="@null"
+                     android:gravity="right|center"
+                     android:hint="请输入详细地址"
+                     android:textSize="14sp" />
+
+             </LinearLayout>
+
+             <View
+                 android:layout_width="match_parent"
+                 android:layout_height="0.5dp"
+                 android:layout_marginLeft="12dp"
+                 android:layout_marginRight="12dp"
+                 android:background="#FFE2E2E2" />
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="50dp"
+                 android:background="@color/white">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:gravity="center_vertical"
+                     android:paddingLeft="13dp"
+                     android:text="苗圃面积（亩）："
+                     android:textColor="@color/black"
+                     android:textSize="14sp" />
+
+                 <EditText
+                     android:id="@+id/et_demand_tech_add_area"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_marginRight="20dp"
+                     android:background="@null"
+                     android:gravity="right|center"
+                     android:hint="请输入面积"
+                     android:inputType="numberDecimal"
+                     android:maxLength="7"
+                     android:textSize="14sp" />
+             </LinearLayout>
+
+             <LinearLayout
+                 android:id="@+id/ll_contact1"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical">
+
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="10dp"
+                     android:background="#FFf7f7f7" />
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="50dp"
+                     android:background="@color/white">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="match_parent"
+                         android:gravity="center_vertical"
+                         android:paddingLeft="13dp"
+                         android:text="联系人1："
+                         android:textColor="@color/black"
+                         android:textSize="14sp" />
+
+                     <EditText
+                         android:id="@+id/et_demand_tech_add_contacts"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:layout_marginRight="20dp"
+                         android:background="@null"
+                         android:gravity="right|center"
+                         android:hint="请输入联系人"
+                         android:textSize="14sp" />
+
+                 </LinearLayout>
+
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="0.5dp"
+                     android:layout_marginLeft="12dp"
+                     android:layout_marginRight="12dp"
+                     android:background="#FFE2E2E2" />
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="50dp"
+                     android:background="@color/white">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="match_parent"
+                         android:gravity="center_vertical"
+                         android:paddingLeft="13dp"
+                         android:text="联系电话："
+                         android:textColor="@color/black"
+                         android:textSize="14sp" />
+
+                     <EditText
+                         android:id="@+id/et_demand_tech_add_mobile"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:layout_marginRight="20dp"
+                         android:background="@null"
+                         android:gravity="right|center"
+                         android:hint="请输入联系电话"
+                         android:inputType="number"
+                         android:maxLength="11"
+                         android:textSize="14sp" />
+
+                 </LinearLayout>
+
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="1dp"
+                     android:background="#EEEEEE" />
+             </LinearLayout>
+
+             <LinearLayout
+                 android:id="@+id/ll_contact2"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:visibility="gone">
+
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="10dp"
+                     android:background="#FFf7f7f7" />
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="50dp"
+                     android:background="@color/white">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="match_parent"
+                         android:gravity="center_vertical"
+                         android:paddingLeft="13dp"
+                         android:text="联系人2："
+                         android:textColor="@color/black"
+                         android:textSize="14sp" />
+
+                     <EditText
+                         android:id="@+id/et_demand_tech_add_contacts2"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:layout_marginRight="20dp"
+                         android:background="@null"
+                         android:gravity="right|center"
+                         android:hint="请输入联系人"
+                         android:textSize="14sp" />
+
+                 </LinearLayout>
+
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="0.5dp"
+                     android:layout_marginLeft="12dp"
+                     android:layout_marginRight="12dp"
+                     android:background="#FFE2E2E2" />
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="50dp"
+                     android:background="@color/white">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="match_parent"
+                         android:gravity="center_vertical"
+                         android:paddingLeft="13dp"
+                         android:text="联系电话："
+                         android:textColor="@color/black"
+                         android:textSize="14sp" />
+
+                     <EditText
+                         android:id="@+id/et_demand_tech_add_mobile2"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:layout_marginRight="20dp"
+                         android:background="@null"
+                         android:gravity="right|center"
+                         android:hint="请输入联系电话"
+                         android:inputType="number"
+                         android:maxLength="11"
+                         android:textSize="14sp" />
+
+                 </LinearLayout>
+
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="1dp"
+                     android:background="#EEEEEE" />
+             </LinearLayout>
+
+             <LinearLayout
+                 android:id="@+id/ll_contact3"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:visibility="gone">
+
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="10dp"
+                     android:background="#FFf7f7f7" />
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="50dp"
+                     android:background="@color/white">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="match_parent"
+                         android:gravity="center_vertical"
+                         android:paddingLeft="13dp"
+                         android:text="联系人3："
+                         android:textColor="@color/black"
+                         android:textSize="14sp" />
+
+                     <EditText
+                         android:id="@+id/et_demand_tech_add_contacts3"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:layout_marginRight="20dp"
+                         android:background="@null"
+                         android:gravity="right|center"
+                         android:hint="请输入联系人"
+                         android:textSize="14sp" />
+
+                 </LinearLayout>
+
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="0.5dp"
+                     android:layout_marginLeft="12dp"
+                     android:layout_marginRight="12dp"
+                     android:background="#FFE2E2E2" />
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="50dp"
+                     android:background="@color/white">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="match_parent"
+                         android:gravity="center_vertical"
+                         android:paddingLeft="13dp"
+                         android:text="联系电话："
+                         android:textColor="@color/black"
+                         android:textSize="14sp" />
+
+                     <EditText
+                         android:id="@+id/et_demand_tech_add_mobile3"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:layout_marginRight="20dp"
+                         android:background="@null"
+                         android:gravity="right|center"
+                         android:hint="请输入联系电话"
+                         android:inputType="number"
+                         android:maxLength="11"
+                         android:textSize="14sp" />
+
+                 </LinearLayout>
+
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="1dp"
+                     android:background="#EEEEEE" />
+             </LinearLayout>
+
+             <LinearLayout
+                 android:id="@+id/ll_contact_add"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical">
+
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="10dp"
+                     android:background="#FFf7f7f7" />
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="50dp"
+                     android:background="@color/white"
+                     android:gravity="center_vertical"
+                     android:paddingLeft="13dp">
+
+                     <ImageView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:gravity="center_vertical"
+                         android:src="@mipmap/ic_nursery_tjlxr" />
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="match_parent"
+                         android:gravity="center_vertical"
+                         android:paddingLeft="3dp"
+                         android:text="添加联系人"
+                         android:textColor="@color/black"
+                         android:textSize="14sp" />
+                 </LinearLayout>
+
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="1dp"
+                     android:background="#EEEEEE" />
+             </LinearLayout>
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:padding="14dp"
+                 android:text="最多可添加3位联系人，至少添加1位联系人"
+                 android:textColor="#ff333333"
+                 android:textSize="12sp" />
+
+             <LinearLayout
+                 android:id="@+id/ll_nursery_delete"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginBottom="20dp"
+                 android:orientation="vertical"
+                 android:visibility="gone">
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="50dp"
+                     android:background="@color/white"
+                     android:gravity="center_vertical"
+                     android:paddingLeft="13dp">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="match_parent"
+                         android:gravity="center_vertical"
+                         android:text="删除该苗圃"
+                         android:textColor="#FA720A"
+                         android:textSize="14sp" />
+                 </LinearLayout>
+
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="1dp"
+                     android:background="#EEEEEE" />
+             </LinearLayout>
+
+         </LinearLayout>
+     </androidx.core.widget.NestedScrollView>
+     <com.scwang.smart.refresh.header.FalsifyFooter
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"/>
+
+ </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+        <com.widget.miaotu.common.utils.ShapeTextView
+            android:id="@+id/stv_add_miaopu_wancheng"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            app:radiusT="20dp"
+            android:text="完成"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            app:solidColorT="@color/colorAccent" />
+    </FrameLayout>
+
+
+</LinearLayout>

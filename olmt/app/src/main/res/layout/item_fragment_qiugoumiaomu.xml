@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+
+    android:background="@color/white_color"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_qiuGouMiaoMu_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="黄槐"
+                android:textColor="#333333"
+                android:textSize="16sp"
+
+                />
+
+            <com.widget.miaotu.common.utils.ShapeTextView
+                android:id="@+id/st_qiuGouMiaoMu_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="2dp"
+                android:textColor="#00B0A0"
+                android:textSize="10sp"
+                app:radiusT="2dp"
+
+                app:strokeColorT="#00B0A0"
+                app:strokeWidthT="1dp" />
+
+            <TextView
+                android:id="@+id/tv_qiuGouMiaoMu_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+
+                android:textColor="#00B0A0"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_qiugou_delete_dialog"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="···"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+        <!--采购规格-->
+        <TextView
+            android:id="@+id/tv_qiuGouMiaoMu_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="采购规格：高度10-15厘米  冠幅5-12厘米 "
+            android:textColor="#666666"
+            android:textSize="13sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_qiuGouMiaoMu_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:enabled="true"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="联系人：王大拿 "
+                android:textColor="#666666"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_qiuGouMiaoMu_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#00B0A0"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_qiuGouMiaoMu_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:enabled="true"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="用苗地"
+            android:textColor="#666666"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_qiuGouMiaoMu_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:enabled="true"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="产地要求"
+            android:textColor="#666666"
+            android:textSize="13sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            android:gravity="center_vertical">
+
+
+            <TextView
+                android:id="@+id/tv_qiuGouMiaoMu_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:enabled="true"
+
+                android:singleLine="true"
+                android:text="广东龙洞路变化种苗场  >"
+                android:textColor="#666666"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/iv_qgmu_wing"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_toRightOf="@+id/tv_qiuGouMiaoMu_9"
+                android:src="@mipmap/iv_vip_wing"
+
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_qiuGouMiaoMu_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentRight="true"
+                android:textColor="#666666"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="@color/item_line_color" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_qiugou_miaomu"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/iv_collection_old"
+        android:visibility="gone"
+        />
+</LinearLayout>

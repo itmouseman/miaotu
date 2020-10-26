@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="105dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="15dp"
+    android:paddingTop="10dp"
+    android:layout_marginTop="1dp"
+    android:background="@color/white"
+    android:paddingRight="15dp"
+    android:paddingBottom="15dp">
+
+    <TextView
+        android:id="@+id/tv_item_gh_img_and_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="120dp"
+        android:text="  嘉兴2个生态文明建设项目获种养预算内投资 "
+        android:textSize="16sp"
+        android:maxLines="2"
+        android:enabled="true"
+        android:ellipsize="end"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_item_gh_img_and_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="中国花木王  89阅读  1小时前"
+        android:textColor="#878787"
+        android:maxLines="1"
+        android:enabled="true"
+        android:ellipsize="end"
+        android:textSize="11sp" />
+
+    <com.widget.miaotu.common.utils.rclayout.RCImageView
+        android:id="@+id/iv_item_gh_img_and_text"
+        android:layout_width="115dp"
+        android:layout_height="75dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@color/white"
+        app:round_corner="3dp"
+        android:scaleType="fitXY" />
+</RelativeLayout>

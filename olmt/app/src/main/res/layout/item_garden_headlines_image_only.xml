@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="295dp"
+    android:layout_marginTop="1dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="10dp"
+    >
+
+    <TextView
+        android:id="@+id/tv_item_gh_image_only"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:enabled="true"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:textColor="#0D0D0D"
+        android:textSize="16sp" />
+
+    <com.widget.miaotu.common.utils.rclayout.RCImageView
+        android:id="@+id/iv_item_gh_image_only"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        app:round_corner="5dp" />
+    <TextView
+        android:id="@+id/iv_item_gh_image_only_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="中国花木王  89阅读  1小时前"
+        android:textColor="#878787"
+        android:maxLines="1"
+        android:enabled="true"
+        android:ellipsize="end"
+        android:textSize="11sp" />
+</LinearLayout>

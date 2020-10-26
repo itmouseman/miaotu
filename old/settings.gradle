@@ -1,0 +1,5 @@
+include ':windingfjpay'
+include ':easeui'
+include ':easeui'
+include ':app'
+rootProject.name = "miaotu"

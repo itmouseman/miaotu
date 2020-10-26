@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/include_titlebar"></include>
+    <TextView
+        android:id="@+id/tv_position_chose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已选择 "
+        android:textColor="#ff333333"
+        android:textSize="12sp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="@dimen/margin_15"
+        />
+
+    <TextView
+        android:id="@+id/tv_position_info"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="项目管理员"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:layout_marginTop="@dimen/margin_15"
+        android:background="@drawable/btn_green_press_bg"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/margin_15"
+        android:background="@drawable/shape_line_10" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_position_list"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

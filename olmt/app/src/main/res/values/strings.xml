@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">苗途</string>
+    <string name="textview">TextView</string>
+
+    <string name="title_home">首页</string>
+    <string name="title_miaopu">苗圃</string>
+    <string name="title_firends">朋友</string>
+    <string name="title_mine">我的</string>
+    <!-- : Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">我的</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">苗圃</string>
+    <string name="_232322342">232322342</string>
+    <string name="home_lf_name1">热门苗木</string>
+    <string name="home_lf_name2">最新推广</string>
+    <string name="home_lf_name3">最新苗木</string>
+    <string name="string_home_item_nine">苗圃</string>
+    <string name="search_name">输入苗木名称</string>
+    <string name="search_name1">苗木名称或企业名称</string>
+    <string name="mine_denglu_zhuce">登录/注册</string>
+    <string name="mine_wodefabu">我的发布</string>
+    <string name="mine_miaotuhuiyuan">苗途VIP会员</string>
+    <string name="mine_ruhuiyuanxiangfuli">入会员 享福利</string>
+    <string name="mine_lijixufei">立即续费</string>
+    <string name="mine_lijiyaoqing">立即邀请</string>
+    <string name="mine_yaoqinghaoyousong">邀请好友免费赠会员</string>
+    <string name="mine_changyonggongju">常用工具</string>
+    <string name="login_title_for_code">手机验证码登录</string>
+    <string name="logn_editext_phone">请输入手机号码</string>
+    <string name="logn_editext_code">请输入验证码</string>
+    <string name="getCode">获取验证码</string>
+    <string name="login_title_for_password">密码登录</string>
+    <string name="logn_editext_password">请输入密码</string>
+    <string name="login_title_for_reset">重置密码</string>
+    <string name="logn_editext_pas_rest">请输入6-12位密码</string>
+    <string name="text_User_info1">特别提示</string>
+    <string name="text_User_info2">"杭州羊圈生物科技有限公司在此特别提醒您杭州羊圈生物科技有限公司在此特别提醒您杭州羊圈生物科技有限公司在此特别提醒您杭州羊圈生物科技有限公司在此特别提醒您。\n\n杭州羊圈生物科技有限公司在此特别提醒您杭州羊圈生物科技有限公司在此特别提醒您杭州羊圈生物科技有限公司在此特别提醒您杭州羊圈生物科技有限公司在此特别提醒您。                             "</string>
+    <string name="text_User_info3">一、账号注册</string>
+    <string name="text_User_info4">"1、用户在使用本服务前需要注册一个苗途账号。用户在使用本服务前需要注册一个苗途账号。用户在使用本服务前需要注册一个苗途账号。用户在使用本服务前需要注册一个苗途账号。 \n\n2、用户在使用本服务前需要注册一个苗途账号。用户在使用本服务前需要注册一个苗途账号。用户在使用本服务前需要注册一个苗途账号。用户在使用本服务前需要注册一个苗途账号。                             "</string>
+    <string name="text_User_info5">二、服务内容</string>
+    <string name="text_User_info6">"1、用户在使用本服务前需要注册一个苗途账号。用户在使用本服务前需要注册一个苗途账号。用户在使用本服务前需要注册一个苗途账号。用户在使用本服务前需要注册一个苗途账号。 \n\n2、用户在使用本服务前需要注册一个苗途账号。用户在使用本服务前需要注册一个苗途账号。用户在使用本服务前需要注册一个苗途账号。用户在使用本服务前需要注册一个苗途账号。                             "</string>
+    <string name="text_User_info7">三、用户个人信息保护</string>
+    <string name="text_User_info8">"1、用户在使用本服务前需要注册一个苗途账号。用户在使用本服务前需要注册一个苗途账号。用户在使用本服务前需要注册一个苗途账号。用户在使用本服务前需要注册一个苗途账号。 \n\n2、用户在使用本服务前需要注册一个苗途账号。用户在使用本服务前需要注册一个苗途账号。用户在使用本服务前需要注册一个苗途账号。用户在使用本服务前需要注册一个苗途账号。 \n\n（1）用户自行提供的个人信息用户自行提供的。 \n\n（2）用户自行提供的个人信息用户自行提供的个人信。 \n\n（3）用户自行提供的个人信息用户自行提供的个人信。用户自行提供的个人信息用户自行提供的个人信。用户自行提供的个人信息用户自行提供的个人信。用户自行提供的个人信息用户自行提供的个人信。用户自行提供的个人信息用户自行提供的个人信。                             "</string>
+    <string name="getCode_return">重新获取</string>
+    <string name="text_ShuruShuZhi">输入数值</string>
+
+    <string name="message_permission_rationale"> 需申请以下权限:\n\n%1$s</string>
+    <string name="message_permission_always_failed">Please give us permission in the settings:\n\n%1$s</string>
+</resources>

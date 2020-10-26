@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="125dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="5dp">
+
+
+    <com.widget.miaotu.common.utils.rclayout.RCImageView
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:src="@drawable/zhanweitu_150_150"
+        android:id="@+id/iv_home_tuiguang"
+        android:scaleType="centerCrop"
+       android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        app:round_corner="5dp"
+        ></com.widget.miaotu.common.utils.rclayout.RCImageView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/promote"
+        android:layout_alignParentRight="true"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_home_tuiguang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dummy_content"
+        android:textColor="@color/home_lf_title"
+        android:textSize="@dimen/home_rmmm_textSize"
+         android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        ></TextView>
+
+</RelativeLayout>

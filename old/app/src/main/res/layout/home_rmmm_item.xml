@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@color/qmui_config_color_white"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/iv_home_rmmm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/zhanweitu_110_55"
+
+            android:background="@color/qmui_config_color_white"></ImageView>
+
+        <TextView
+            android:id="@+id/tv_home_rmmm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="@dimen/home_rmmm_textSize"
+            android:textColor="@color/qmui_config_color_white"
+            android:text="苗圃"></TextView>
+
+    </FrameLayout>
+
+</LinearLayout>

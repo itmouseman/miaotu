@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.qmuiteam.qmui.widget.QMUITopBarLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        />
+    <com.qmuiteam.qmui.widget.tab.QMUITabSegment
+        android:id="@+id/tabs_hot_spot_information"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_tab_height"
+        android:layout_marginTop="-1dp"
+        android:background="@color/white_color"
+        android:textSize="12sp"
+        app:qmui_tab_icon_position="top"
+        app:qmui_tab_normal_text_size="14sp"
+        app:qmui_tab_selected_text_size="16sp"
+        app:qmui_tab_indicator_height="1dp"
+        app:qmui_tab_has_indicator="true"
+        app:qmui_topDividerColor="@color/colorGrayEFEFEF"
+        app:qmui_topDividerHeight="1px" />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_hot_spot_information"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:background="@color/white_color" />
+
+</LinearLayout>

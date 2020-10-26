@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ Tencent is pleased to support the open source community by making QMUI_Android available.
+
+ Copyright (C) 2017-2018 THL A29 Limited, a Tencent company. All rights reserved.
+
+ Licensed under the MIT License (the "License"); you may not use this file except in
+ compliance with the License. You may obtain a copy of the License at
+
+ http://opensource.org/licenses/MIT
+
+ Unless required by applicable law or agreed to in writing, software distributed under the License is
+ distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+ either express or implied. See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<resources>
+    <dimen name="home_tab_height">49dp</dimen>
+    <dimen name="common_content_spacing">@dimen/qmui_content_spacing_horizontal</dimen>
+
+    <!-- ListView -->
+    <dimen name="list_divider_height">1px</dimen>
+    <dimen name="list_divider_height_negative">-1px</dimen>
+    <!-- Helper 系列界面 -->
+
+    <!-- ColorHelper 颜色工具 -->
+    <dimen name="colorHelper_square_length">46dp</dimen>
+    <dimen name="colorHelper_square_margin">23dp</dimen>
+    <dimen name="colorHelper_square_desc_marginTop">10dp</dimen>
+    <dimen name="colorHelper_column_marginBottom">35dp</dimen>
+
+    <!-- DeviceHelper 设备检测工具 -->
+    <dimen name="deviceHelper_column_marginBottom">30dp</dimen>
+
+    <!-- DrawableHelper Drawable 工具 -->
+    <dimen name="drawableHelper_column_marginBottom">35dp</dimen>
+    <dimen name="drawableHelper_item_marginHorizontal">20dp</dimen>
+    <dimen name="drawableHelper_common_shape_size">50dp</dimen>
+
+    <!-- Span Utils 各种 Span 工具 -->
+    <dimen name="spanUtils_column_marginBottom">35dp</dimen>
+    <dimen name="spanUtils_common_textSize">16sp</dimen>
+
+    <!--  首页左边标题字体大小-->
+    <dimen name="home_lf_textSize">18sp</dimen>
+    <dimen name="home_nine_textSize">12sp</dimen>
+    <dimen name="home_rmmm_textSize">14sp</dimen>
+    <dimen name="textSize_1">1sp</dimen>
+    <dimen name="textSize_2">2sp</dimen>
+    <dimen name="textSize_3">3sp</dimen>
+    <dimen name="textSize_4">4sp</dimen>
+    <dimen name="textSize_5">5sp</dimen>
+    <dimen name="textSize_6">6sp</dimen>
+    <dimen name="textSize_7">7sp</dimen>
+    <dimen name="textSize_8">8sp</dimen>
+    <dimen name="textSize_9">9sp</dimen>
+    <dimen name="textSize_10">10sp</dimen>
+    <dimen name="textSize_11">11sp</dimen>
+    <dimen name="textSize_12">12sp</dimen>
+    <dimen name="textSize_13">13sp</dimen>
+    <dimen name="textSize_14">14sp</dimen>
+    <dimen name="textSize_15">15sp</dimen>
+
+    <dimen name="textSize_20">15sp</dimen>
+
+    <dimen name="text_size_10">10.0sp</dimen>
+    <dimen name="text_size_11">11.0sp</dimen>
+    <dimen name="text_size_12">12.0sp</dimen>
+    <dimen name="text_size_13">13.0sp</dimen>
+    <dimen name="text_size_14">14.0sp</dimen>
+    <dimen name="text_size_15">15.0sp</dimen>
+    <dimen name="text_size_16">16.0sp</dimen>
+    <dimen name="text_size_17">17.0sp</dimen>
+    <dimen name="text_size_18">18.0sp</dimen>
+    <dimen name="text_size_20">20.0sp</dimen>
+    <dimen name="text_size_22">22.0sp</dimen>
+    <dimen name="text_size_24">24.0sp</dimen>
+    <dimen name="text_size_28">28.0sp</dimen>
+    <dimen name="text_size_30">30.0sp</dimen>
+    <dimen name="text_size_32">32.0sp</dimen>
+    <dimen name="margin_05">0.5dip</dimen>
+    <dimen name="margin_2">2.0dip</dimen>
+    <dimen name="margin_3">3.0dip</dimen>
+    <dimen name="margin_5">5.0dip</dimen>
+    <dimen name="margin_8">8.0dip</dimen>
+    <dimen name="margin_10">10.0dip</dimen>
+    <dimen name="margin_12">12.0dip</dimen>
+    <dimen name="margin_15">15.0dip</dimen>
+    <dimen name="margin_20">20.0dip</dimen>
+    <dimen name="margin_25">25.0dip</dimen>
+    <dimen name="margin_30">30.0dip</dimen>
+    <dimen name="margin_50">50.0dip</dimen>
+    <dimen name="padding_3">5.0dip</dimen>
+    <dimen name="padding_5">5.0dip</dimen>
+    <dimen name="padding_8">8.0dip</dimen>
+    <dimen name="padding_10">10.0dip</dimen>
+    <dimen name="padding_12">12.0dip</dimen>
+    <dimen name="padding_13">13.0dip</dimen>
+    <dimen name="padding_15">15.0dip</dimen>
+    <dimen name="padding_20">20.0dip</dimen>
+
+    <dimen name="me_info_margin">15.0dip</dimen>
+</resources>

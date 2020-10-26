@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#00000000"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ll_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="1dp">
+
+            <com.widget.miaotu.common.utils.ShapeTextView
+                android:id="@+id/textview1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_8"
+                android:paddingRight="@dimen/margin_8"
+                android:text="供应苗木"
+                app:strokeWidthT="1dp"
+                app:strokeColorT="@color/text_color_33"
+                android:textColor="@color/text_color_33"
+                android:textSize="@dimen/text_size_12"
+                app:bottomLeftRadiusT="3dp"
+                app:topLeftRadiusT="3dp" />
+
+            <com.widget.miaotu.common.utils.ShapeTextView
+                android:id="@+id/textview3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_8"
+                android:paddingRight="@dimen/margin_8"
+                android:text="求购苗木"
+                android:textColor="@color/text_color_33"
+
+                app:strokeWidthT="1dp"
+                app:strokeColorT="@color/text_color_33"
+                app:bottomRightRadiusT="3dp"
+                app:topRightRadiusT="3dp"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView63"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="18dp"
+            android:src="@mipmap/ic_base_black_back" />
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vp_Supply_And_AskToBuy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
+
+
+
+

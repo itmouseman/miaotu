@@ -1,0 +1,37 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hyphenate.easeui">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+
+    <application
+        >
+<!--        填写百度开放平台的-->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="tbDfbUo0VsIQYSekrCbMVp0F" >
+        </meta-data>
+
+<!--     地图 -->
+        <activity
+            android:name="com.hyphenate.easeui.ui.EaseBaiduMapActivity"
+            />
+<!--       显示下载大图页面   -->
+        <activity
+            android:name="com.hyphenate.easeui.ui.EaseShowBigImageActivity"
+          />
+        <activity
+            android:name="com.hyphenate.easeui.ui.EaseShowVideoActivity"
+         />
+        <activity
+            android:name="com.hyphenate.easeui.ui.EaseShowNormalFileActivity"
+             />
+    </application>
+
+</manifest>

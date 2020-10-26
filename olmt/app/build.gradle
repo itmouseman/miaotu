@@ -1,0 +1,247 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.mob.sdk'
+apply plugin: 'org.greenrobot.greendao' // apply plugin
+
+android {
+
+
+    signingConfigs {
+        debug {
+            keyAlias 'android.keystore'
+            keyPassword 'yangjuan'
+            storeFile file('/Users/mac/Desktop/App/miaotu/miaotu.keystore.jks')
+//            storeFile file('miaotu.keystore.jks')
+            storePassword 'yangjuan'
+
+        }
+        release {
+            v1SigningEnabled true
+            v2SigningEnabled true
+            keyAlias 'android.keystore'
+            keyPassword 'yangjuan'
+            storeFile file('/Users/mac/Desktop/App/miaotu/miaotu.keystore.jks')
+//            storeFile file('miaotu.keystore.jks')
+            storePassword 'yangjuan'
+        }
+
+    }
+    compileSdkVersion 29
+    buildToolsVersion '28.0.3'
+
+    defaultConfig {
+        applicationId "com.widget.miaotu"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 102
+        versionName "5.8"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi' , 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+    }
+
+    buildTypes {
+        release {
+            //在这里添加：
+            lintOptions {
+                checkReleaseBuilds false
+                abortOnError false
+            }
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            signingConfig signingConfigs.debug
+        }
+    }
+    greendao {
+        schemaVersion 1//数据库版本号
+        daoPackage 'com.weight.miaotu.bean.greendao'//设置DaoMaster、DaoSession、Dao包名
+        targetGenDir 'src/main/java'//设置DaoMaster、DaoSession、Dao目录
+        //targetGenDirTest：设置生成单元测试目录
+        //generateTests：设置自动生成单元测试用例
+    }
+
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation project(path: ':easeui')
+    implementation files('lib\\oppo_push_v2.0.2.jar')
+    implementation files('lib\\vivo_push_v2.3.1.jar')
+    implementation files('lib\\mi_push_v3.6.12.jar')
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:27.1.1'
+    //butterknife
+    implementation 'com.jakewharton:butterknife:10.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+
+
+    //日志
+    implementation 'com.orhanobut:logger:2.2.0'
+
+    //网络请求 okhttp
+    implementation 'com.squareup.okhttp3:okhttp:3.9.0'
+
+    //网络日志
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    //rx系列
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.0.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+
+    //配合Rxjava 使用
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.9'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+
+
+    implementation 'com.zhy:okhttputils:2.6.2'
+
+    //加载弹窗
+    implementation 'com.kaopiz:kprogresshud:1.2.0'
+
+    //QMUI
+    implementation 'com.qmuiteam:qmui:2.0.0-alpha10'
+
+    //屏幕适配
+    implementation 'me.jessyan:autosize:1.2.1'
+
+    //刷新SmartRefreshLayout
+    implementation 'com.scwang.smart:refresh-layout-kernel:2.0.1'      //核心必须依赖
+    implementation 'com.scwang.smart:refresh-header-classics:2.0.1'    //经典刷新头
+    implementation 'com.scwang.smart:refresh-header-falsify:2.0.1'     //虚拟刷新头
+    implementation 'com.scwang.smart:refresh-footer-classics:2.0.1'    //经典加载
+
+    //万能adapter
+    implementation 'com.zhy:base-rvadapter:3.0.3'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4'
+
+
+    //banner
+    implementation 'com.youth.banner:banner:2.0.11'
+
+
+    //解决方法数过多
+    implementation 'com.android.support:multidex:1.0.3'
+
+
+    //XPopup2.0实现不了的弹窗效果。2.0.5有问题
+    implementation 'com.lxj:xpopup:2.0.4-rc1'
+    implementation 'com.google.android.material:material:1.3.0-alpha01'
+    implementation 'com.lxj:xpopup-ext:0.0.3'
+//        //由于扩展库依赖XPopup才能正常使用，所以还必须添加XPopup依赖
+//    implementation 'com.lxj:xpopup:2.0.2'
+
+    //进度条
+    implementation 'com.github.Jay-Goo:RangeSeekBar:v3.0.0'
+
+    //选择器
+    implementation 'com.contrarywind:Android-PickerView:4.1.9'
+
+    //单选 多选
+    implementation 'com.hyman:flowlayout-lib:1.1.2'
+
+    //tablayout
+//    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    implementation 'com.github.hackware1993:MagicIndicator:1.5.0'
+    //权限申请
+    implementation 'com.yanzhenjie:permission:2.0.3'
+
+    // 图片压缩——Luban鲁班压缩
+    implementation 'top.zibin:Luban:1.1.8'
+
+// 使用Android生命周期作为提供者
+    implementation 'com.trello.rxlifecycle2:rxlifecycle-android-lifecycle:2.2.2'
+
+    // 工具类
+    // GitHub: https://github.com/Blankj/AndroidUtilCode
+    implementation 'com.blankj:utilcode:1.23.2'
+
+
+    // 加载对话框
+    // GitHub: https://github.com/ForgetAll/LoadingDialog
+    implementation 'com.github.ForgetAll:LoadingDialog:v1.0.4'
+
+    //数据库
+    implementation 'org.greenrobot:greendao:3.2.2'
+
+    // 高德地位
+    implementation 'com.amap.api:location:latest.integration'
+    implementation 'com.amap.api:search:latest.integration'
+
+
+    /*PictureSelector*/
+    implementation 'com.github.LuckSiege.PictureSelector:picture_library:v2.5.8'
+
+    //快捷支付
+    implementation 'com.github.luckyfj:WindingPay:v1.0.0'
+
+    //bug收集
+    implementation 'com.tencent.bugly:crashreport:latest.release'
+    //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.1.9
+    implementation 'com.tencent.bugly:nativecrashreport:latest.release'
+    //其中latest.release指代最新Bugly NDK版本号，也可以指定明确的版本号，例如3.0
+}
+
+
+MobSDK {
+    appKey "117d673869674"
+    appSecret "041524e46f74758e72fcdf7b396287e6"
+    ShareSDK {
+        loopShare true
+        devInfo {
+            Wechat {
+                appId "wx7efd0146f0a682ea"
+                appSecret "2f56ee25e57ee797d797c10a01ab70ae"
+                userName "gh_afb25ac019c9"
+                path "pages/index/index.html?id=1"
+                withShareTicket true
+                miniprogramType 0
+                bypassApproval false
+                enable true
+            }
+            WechatMoments {
+                appId "wx7efd0146f0a682ea"
+                appSecret "2f56ee25e57ee797d797c10a01ab70ae"
+            }
+            QQ {
+                appId "100371282"
+                appKey "aed9b0303e3ed1e27bae87c33761161d"
+            }
+
+            Douyin {
+                appKey "aw9ivykfjvi4hpwo"
+                appSecret "42b4caa6bda60bd49f05f06d0a4956e1"
+            }
+
+        }
+    }
+}
+

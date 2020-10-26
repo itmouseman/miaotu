@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_titlebar" />
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/iv_about_us" />
+
+    <TextView
+        android:id="@+id/tv_us_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:textColor="#999999"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="25dp"
+
+        android:lineSpacingMultiplier="2"
+        android:text=" 苗途APP，专业从事苗木交易的移动互联网信息服务平台。\n基于满足园林、花卉、苗木行业从业人员线上交易、搜索、交流、学习、传播、数据等需求，利用移动互联网技术，开发诸如产品数据库、信息资讯库、即时通讯系统、评价排行、智能搜索、图像识别、数据资产交易、LBS/SAAS等工具赋能整个园林苗木产业链各节点，提升产业链效能，实现行业全面智能化、数据化、智慧化。"
+        android:textColor="#000000"
+
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tv_us3"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:text="杭州中苗会信息科技有限公司版权所有"
+        android:textColor="#999999"
+        android:textSize="@dimen/textSize_12" />
+
+    <TextView
+        android:id="@+id/tv_us2"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/tv_us1"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:text=" Copyright 2015-2021 SheepStell Inc. All Rights Reserved."
+        android:textColor="#999999"
+        android:textSize="@dimen/textSize_12" />
+
+    <TextView
+        android:id="@+id/tv_us1"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="联系客服：133 9657 8980"
+        android:textColor="#999999"
+        android:textSize="@dimen/textSize_12" />
+</LinearLayout>

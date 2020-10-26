@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+        <!--AppBarLayout的大小其实就是那个大图的大小-->
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/home_detail_appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+            <!--CollapsingToolbarLayout-->
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/main3_CollapsingToolbarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:contentScrim="@color/white_color"
+                app:expandedTitleGravity="center_horizontal"
+                app:expandedTitleMarginStart="100dp"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+                <!--
+                app:contentScrim="#30469b"//设置当完全CollapsingToolbarLayout折叠(收缩)后的背景颜色。
+        app:expandedTitleMarginStart="48dp"//设置扩张时候(还没有收缩时)title向左填充的距离。
+                layout_scrollFlags中的几个值：
+            scroll: 所有想滚动出屏幕的view都需要设置这个flag， 没有设置这个flag的view将被固定在屏幕顶部。
+            enterAlways:这个flag让任意向下的滚动都会导致该view变为可见，启用快速“返回模式”。
+            enterAlwaysCollapsed:当你的视图已经设置minHeight属性又使用此标志时，你的视图只能已最小高度进入，只有当滚动视图到达顶部时才扩大到完整高度。
+            exitUntilCollapsed:滚动退出屏幕，最后折叠在顶端。-->
+
+                <!--                <ImageView-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="match_parent"-->
+                <!--                    android:scaleType="centerCrop"-->
+                <!--                    android:src="@mipmap/test1"-->
+                <!--                    app:layout_collapseMode="parallax"-->
+                <!--                    app:layout_collapseParallaxMultiplier="0.7" />-->
+
+                <com.youth.banner.Banner
+                    android:id="@+id/home_banner_detail1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom" />
+
+
+                <!--app:layout_collapseMode="parallax"//设置为这个模式时，在内容滚动时，CollapsingToolbarLayout中的View（比如ImageView)也可以同时滚动，实现视差滚动效果，通常和layout_collapseParallaxMultiplier(设置视差因子)搭配使用。
+        app:layout_collapseParallaxMultiplier="0.7"//设置视差滚动因子，值为：0~1。
+        -->
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/main3_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_marginTop="10dp"
+                    app:layout_collapseMode="pin">
+                    <!--app:layout_collapseMode="pin"//pin设置为这个模式时，当CollapsingToolbarLayout完全收缩后，Toolbar还可以保留在屏幕上。-->
+
+                </androidx.appcompat.widget.Toolbar>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+            <!--这里要用NestedScrollView而不是ScrollView
+            ScrollView 没有被设计成与 CoordinatorLayout 协同工作。你需要另一个 view：NestedScrollView，
+            这个 NestedScrollView 设计出来的目的就是为了与 CoordinatorLayout 协同工作的。
+    同样的原因，请注意了： ListView 类也是和 CoordinatorLayout 不能协同工作的。只有RecyclerView可以。-->
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#F7F7F7"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white_color"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp">
+
+                        <TextView
+                            android:id="@+id/tv_home_tg_and_mm_danJia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:maxEms="12"
+                            android:singleLine="true"
+                            android:text="20"
+                            android:textColor="#ED710C"
+                            android:textSize="21sp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="100dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_toRightOf="@+id/tv_home_tg_and_mm_danJia"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:maxEms="12"
+                            android:singleLine="true"
+                            android:text="20"
+                            android:textColor="#ED710C"
+                            android:textSize="16sp"
+                            android:visibility="gone"></TextView>
+
+                        <TextView
+                            android:id="@+id/tv_home_tg_and_mm_Name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_home_tg_and_mm_danJia"
+                            android:layout_marginTop="15dp"
+                            android:text="水红三角梅"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:maxEms="12"
+                            android:singleLine="true"
+                            android:textColor="#333333"
+                            android:textSize="15sp"></TextView>
+
+                        <com.widget.miaotu.common.utils.ShapeTextView
+                            android:id="@+id/tv_home_tg_and_mm_zhongLei"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_below="@+id/tv_home_tg_and_mm_danJia"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_toRightOf="@+id/tv_home_tg_and_mm_Name"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="@string/app_name"
+
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/textSize_10"
+                            app:strokeColorT="@color/colorAccent"
+                            app:strokeWidthT="1dp" />
+
+                        <TextView
+                            android:id="@+id/tv_home_tg_and_mm_ChangYongM"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_home_tg_and_mm_Name"
+                            android:layout_marginTop="15dp"
+                            android:text="常用名：孝顺竹，凤凰竹"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:maxEms="12"
+                            android:singleLine="true"
+                            android:textColor="#999999"
+                            android:textSize="@dimen/textSize_12" />
+
+                        <TextView
+                            android:id="@+id/tv_home_tg_and_mm_FenLeiM"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_home_tg_and_mm_ChangYongM"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="分类：乔木/单杠"
+                            android:textColor="#999999"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:maxEms="12"
+                            android:singleLine="true"
+                            android:textSize="@dimen/textSize_12" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:text="苗木规格"
+                        android:ellipsize="end"
+
+                        android:maxEms="12"
+                        android:singleLine="true"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/textSize_12" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/white_color"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="15dp"
+                            android:text="高度"
+                            android:ellipsize="end"
+
+                            android:maxEms="12"
+                            android:singleLine="true"
+                            android:textColor="#999999"
+                            android:textSize="@dimen/textSize_12" />
+
+                        <TextView
+                            android:id="@+id/tv_home_tg_and_mm_GaoDu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="15dp"
+                            android:text="40cm"
+                            android:ellipsize="end"
+
+                            android:maxEms="12"
+                            android:singleLine="true"
+                            android:textColor="#333333"
+                            android:textSize="@dimen/textSize_12" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/item_line_color" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/white_color"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+
+                            android:gravity="center_vertical"
+                            android:paddingLeft="15dp"
+                            android:text="冠幅"
+                            android:textColor="#999999"
+                            android:ellipsize="end"
+
+                            android:maxEms="12"
+                            android:singleLine="true"
+                            android:textSize="@dimen/textSize_12" />
+
+                        <TextView
+                            android:id="@+id/tv_home_tg_and_mm_Guanfu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="15dp"
+                            android:text="40cm"
+                            android:textColor="#333333"
+                            android:ellipsize="end"
+
+                            android:maxEms="12"
+                            android:singleLine="true"
+                            android:textSize="@dimen/textSize_12" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/item_line_color" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/white_color"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+
+                            android:gravity="center_vertical"
+                            android:paddingLeft="15dp"
+                            android:text="分枝数"
+                            android:textColor="#999999"
+                            android:ellipsize="end"
+
+                            android:maxEms="12"
+                            android:singleLine="true"
+                            android:textSize="@dimen/textSize_12" />
+
+                        <TextView
+                            android:id="@+id/tv_home_tg_and_mm_FenZhiShu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="15dp"
+                            android:text="40cm"
+                            android:ellipsize="end"
+
+                            android:maxEms="12"
+                            android:singleLine="true"
+                            android:textColor="#333333"
+
+                            android:textSize="@dimen/textSize_12" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/white_color"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+
+                            android:gravity="center_vertical"
+                            android:paddingLeft="15dp"
+                            android:text="库存"
+                            android:textColor="#999999"
+                            android:ellipsize="end"
+
+                            android:maxEms="12"
+                            android:singleLine="true"
+                            android:textSize="@dimen/textSize_12" />
+
+                        <TextView
+                            android:id="@+id/tv_home_tg_and_mm_KuCun"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:ellipsize="end"
+
+                            android:maxEms="12"
+                            android:singleLine="true"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="15dp"
+                            android:text="40cm"
+                            android:textColor="#333333"
+
+                            android:textSize="@dimen/textSize_12" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/item_line_color" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/white_color"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:ellipsize="end"
+
+                            android:maxEms="12"
+                            android:singleLine="true"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="15dp"
+                            android:text="发布时间"
+                            android:textColor="#999999"
+
+                            android:textSize="@dimen/textSize_12" />
+
+                        <TextView
+                            android:id="@+id/tv_home_tg_and_mm_pushTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:ellipsize="end"
+
+                            android:maxEms="12"
+                            android:singleLine="true"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="15dp"
+                            android:text="40cm"
+                            android:textColor="#333333"
+
+                            android:textSize="@dimen/textSize_12" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_qiYe_enter"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/white_color"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/iv_home_tg_and_mm_qyLog"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/zhanweitu_150_150"></ImageView>
+
+                        <TextView
+                            android:id="@+id/iv_home_tg_and_mm_qyName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_toRightOf="@+id/iv_home_tg_and_mm_qyLog"
+                            android:text="绿之海水生植物合作社"
+                            android:textColor="#333333"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:maxEms="12"
+                            android:singleLine="true"
+                            android:textSize="@dimen/textSize_15" />
+
+                        <TextView
+                            android:id="@+id/iv_home_tg_and_mm_qyLocation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="18dp"
+                            android:layout_toRightOf="@+id/iv_home_tg_and_mm_qyLog"
+                            android:text="浙江 杭州"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:maxEms="12"
+                            android:singleLine="true"
+                            android:textColor="#999999"
+                            android:textSize="@dimen/textSize_12" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_right_next" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white_color"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="#F7F7F7"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="40dp"
+                                android:layout_height="0.5dp"
+                                android:background="#CCCCCC"></View>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:text="详情介绍"
+
+                                android:textColor="#999999"
+                                android:textSize="12sp" />
+
+                            <View
+                                android:layout_width="40dp"
+                                android:layout_height="0.5dp"
+                                android:background="#CCCCCC"></View>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/iv_home_tg_and_mm_describe"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_color"
+                            android:textColor="#333333"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="20dp"
+
+                            android:textSize="15sp"></TextView>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerView_banner_dt_bottom"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="50dp"
+
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white_color">
+
+        <LinearLayout
+            android:id="@+id/ll_home_tg_and_mm_qiye"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@mipmap/iv_qiye_mini" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="企业"
+                android:textColor="#333333"
+                android:textSize="@dimen/textSize_10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_home_tg_and_mm_shouChang"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/ll_home_tg_and_mm_qiye"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_shouchang_mm"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@mipmap/iv_detail_ushouchang" />
+
+            <TextView
+                android:id="@+id/tv_shouchang_mm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="收藏"
+                android:textColor="#333333"
+                android:textSize="@dimen/textSize_10" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_home_tg_and_mm_sendMessage"
+            android:layout_width="108dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_home_tg_and_mm_call"
+            android:background="@drawable/corner_topleft_bottomleft"
+            android:gravity="center"
+            android:text="发消息"
+            android:textColor="@color/white_color" />
+
+        <TextView
+            android:id="@+id/tv_home_tg_and_mm_call"
+            android:layout_width="108dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/corner_topright_bottomright"
+            android:gravity="center"
+            android:text="打电话"
+            android:textColor="@color/white_color" />
+    </RelativeLayout>
+</FrameLayout>

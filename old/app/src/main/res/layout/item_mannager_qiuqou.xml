@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="125dp"
+    android:background="@color/white_color"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <ImageView
+        android:id="@+id/iv_item_manager_qiugou"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:scaleType="center"
+        android:src="@drawable/zhanweitu_150_150" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_item_manager_qiugou1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:maxEms="15"
+                android:maxLines="1"
+                android:text="水红三角梅"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <com.widget.miaotu.common.utils.ShapeTextView
+                android:id="@+id/stv_item_manager_qiugou2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:padding="3dp"
+                android:text="地栽"
+                android:textColor="#00CAB8"
+                android:textSize="10sp"
+                app:strokeColorT="@color/colorAccent"
+                app:strokeWidthT="1dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_item_manager_qiugou3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="高40厘米"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_item_manager_qiugou4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥20/株"
+                android:textColor="#FD522B"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_item_manager_qiugou5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:padding="3dp"
+                android:text="库存"
+                android:textColor="#999999"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <com.widget.miaotu.common.utils.ShapeTextView
+            android:id="@+id/stv_item_manager_qiugou6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="推广"
+            android:textSize="10sp"
+            android:visibility="gone"
+            app:strokeColorT="#E2E4EA"
+            app:strokeWidthT="1dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_item_manager_qiugou7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开通推广"
+        android:textColor="#FD522B"
+        android:textSize="12sp" />
+</LinearLayout>

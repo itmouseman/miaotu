@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <!-- common -->
+    <color name="app_color_blue">#00A8E1</color>
+    <color name="app_color_blue_disabled">#8000A8E1</color>
+    <color name="app_color_blue_pressed">#c000A8E1</color>
+
+    <color name="app_color_blue_2">#31BDF3</color>
+    <color name="app_color_blue_2_disabled">#7F31BDF3</color>
+    <color name="app_color_blue_2_pressed">#7F31BDF3</color>
+
+    <color name="app_color_blue_3">#EBF9FF</color>
+    <color name="app_color_blue_3_disabled">#7FEBF9FF</color>
+    <color name="app_color_blue_3_pressed">#7FEBF9FF</color>
+
+    <color name="app_color_theme_1">#EF5362</color> <!-- Grapefruit -->
+    <color name="app_color_theme_2">#FE6D4B</color> <!-- Bittersweet -->
+    <color name="app_color_theme_3">#FFCF47</color> <!-- Sunflower -->
+    <color name="app_color_theme_4">#9FD661</color> <!-- Grass -->
+    <color name="app_color_theme_5">#3FD0AD</color> <!-- Mint -->
+    <color name="app_color_theme_6">#2BBDF3</color> <!-- Aqua -->
+    <color name="app_color_theme_7">#5A9AEF</color> <!-- Blue Jeans -->
+    <color name="app_color_theme_8">#AC8FEF</color> <!-- Lavender -->
+    <color name="app_color_theme_9">#EE85C1</color> <!-- Pink Rose -->
+
+    <color name="app_color_description">@color/qmui_config_color_gray_5</color>
+
+    <color name="bar_divider">#D4D6D8</color>
+    <color name="tab_panel_bg">#ffffff</color>
+    <color name="tab_panel_divider">@color/bar_divider</color>
+
+    <!-- Components 组件 -->
+    <color name="radiusImageView_border_color">@color/app_color_theme_2</color>
+    <color name="radiusImageView_selected_border_color">@color/app_color_theme_1</color>
+    <color name="radiusImageView_selected_mask_color">#7FEF5362</color>
+
+    <!-- Helper 系列界面 -->
+
+    <!-- ColorHelper 颜色工具 -->
+    <color name="colorHelper_square_alpha_background">@color/app_color_theme_4</color>
+    <color name="colorHelper_square_from_ratio_background">@color/app_color_blue</color>
+    <color name="colorHelper_square_to_ratio_background">@color/app_color_theme_3</color>
+    <color name="black_overlay">#66000000</color>
+    <!-- 首页-->
+    <color name="home_lf_title">#333333</color>
+    <color name="color_mp_miaoshu">#999999</color>
+    <color name="home_text_gray1">#666666</color>
+    <color name="home_gray2">#999999</color>
+    <color name="search_gray">#F5F5F5</color>
+    <color name="home_yellow1">#FF7300</color>
+    <color name="white_color">#ffffff</color>
+
+    <color name="text_titlebar">#444444</color>
+    <color name="text_titlebar_right">#666666</color>
+    <color name="text_huiyuan">#D1A13C</color>
+    <color name="app_background">#F7F7F7</color>
+    <color name="colorSearchTV">#565656</color>
+    <color name="item_line_color">#F7F7F7</color>
+    <color name="base_gray">#F2F2F2</color>
+    <color name="stroke_gray">#EEEEEE</color>
+
+
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="color0ECDBC">#0ecdbc</color>
+    <color name="colorFAFAFA">#FAFAFA</color>
+    <color name="colorF9F9F9">#F9F9F9</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlack4D">#4d4d4d</color>
+    <color name="colorGrayC">#CCCCCC</color>
+    <!--透明-->
+    <color name="transparent">#00000000</color>
+
+    <!--MD_dialog相关-->
+    <color name="card_background">#ffffff</color>
+    <color name="card_shadow">#10000000</color>
+    <color name="lite_blue">#ff359ff2</color>
+    <color name="window_background">#00000000</color>
+    <!--MD_dialog相关-->
+
+
+    <color name="dot_hong">#E73111</color>
+    <color name="text_bottom_comment">#9B9B9B</color>
+
+
+    <color name="pink">#10000000</color>
+    <color name="green">#ffbae4b6</color>
+
+    <color name="colorPurple">#FF09003E</color>
+
+    <color name="red">#aacc0000</color>
+    <color name="background_video_color">#2f3031</color>
+    <color name="background_progress_color">#6C6D6D</color>
+    <color name="progress_color">#aacc0000</color>
+    <color name="line_color">#FF15FF00</color>
+    <color name="shadow_color">#7F000000</color>
+    <color name="line_button">#565758</color>
+    <color name="black_translucent">#50000000</color>
+    <color name="top_bottom">#42BAF8</color>
+
+
+
+
+    <color name="colorWhiteEDEDED">#EDEDED</color>
+    <color name="colorRedC20000">#C20000</color>
+    <color name="colorGrayA3A2A2">#A3A2A2</color>
+    <color name="colorGrayEFEFEF">#EFEFEF</color>
+    <color name="colorGray677272">#677272</color>
+    <color name="colorPurple6C7B8A">#6C7B8A</color>
+    <color name="colorBlue55C9C8">#55c9c8</color>
+    <color name="colorBlack333">#333333</color>
+    <color name="colorBlack2C2C2E">#2C2C2E</color>
+    <color name="click_color">#1f000000</color>
+    <color name="colorGrayF2F6F9">#fff2f6f9</color>
+    <color name="colorGrayF3F6F9">#fff3f6f9</color>
+    <color name="colorGray525252">#525252</color>
+    <color name="colorGrayF8F8F8">#F8F8F8</color>
+    <color name="colorGreen55C9C4">#55C9C4</color>
+    <color name="colorGrayBDCADB">#BDCADB</color>
+    <color name="colorGreen06C1AE">#06C1AE</color>
+    <color name="colorGrayDDDDDF">#DDDDDF</color>
+    <color name="colorGrayE9FFFF">#E9FFFF</color>
+    <color name="colorYellowFF7225">#FF7225</color>
+    <color name="colorYellowFFFEEC">#FFFEEC</color>
+    <color name="colorGreen38D9A4">#38D9A4</color>
+    <color name="colorGoldenD8C595">#D8C595</color>
+    <color name="colorGreen6FC7C3">#6FC7C3</color>
+    <color name="colorPink6FC7C3">#FDA6A3</color>
+    <color name="colorYellowF25900">#F25900</color>
+    <color name="colorGreen05C1B0">#05C1B0</color>
+    <color name="colorGrayF7F5F6">#F7F5F6</color>
+    <color name="colorGreen51C0B0">#51C0B0</color>
+    <color name="colorRedDF2121">#df2121</color>
+    <color name="colorYellowFF3C0A">#FF3C0A</color>
+    <color name="colorGreen50BEBD">#50BEBD</color>
+    <color name="colorGrayF8F5F5">#FFF8F5F5</color>
+
+    <color name="holo_red_light">#ffff4444</color>
+    <color name="holo_red_dark">#ffcc0000</color>
+
+    <color name="colorFFBA55">#ffba55</color>
+    <color name="color11D0AA">#FF11D0AA</color>
+    <color name="color7CADFA">#FF7CADFA</color>
+    <color name="colorFD6E8A">#FFFD6E8A</color>
+    <color name="color00B7AA">#00b7aa</color>
+
+    <color name="color070707">#FF070707</color>
+    <color name="colorF8F8F8">#F8F8F8</color>
+    <color name="startingwindow_bgcolor">#10FFFFFF</color>
+    <color name="color20000000">#20000000</color>
+    <color name="colorF2F2F2">#F2F2F2</color>
+
+    <color name="text_color_99">#FF999999</color>
+    <color name="text_color_EC">#FF4992EC</color>
+
+    <color name="text_color_33">#333333</color>
+    <color name="text_color_F6">#FFF6F6F6</color>
+
+    <color name="color00cab8">#FF00CAB8</color>
+    <color name="colorFA720A">#FFFA720A</color>
+
+    <color name="colorGrayF7F7F7">#F7F7F7</color>
+
+    <color name="text_color_66">#FF666666</color>
+
+    <color name="offer_linear_bgcolor">#F0F0F0</color>
+    <color name="offer_linear_text_gray">#464646</color>
+
+    <color name="trans">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="color01C9BA">#01C9BA</color>
+
+    <color name="half_black">#808080</color>
+    <color name="white">#fff</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="rz_conor_bian">#D3FDF9</color>
+</resources>
